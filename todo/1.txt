@@ -1,0 +1,47 @@
+guest@hdsec.cn:/$
+help
+	ls
+	whoami
+	cat
+	cd
+	 ___  ___   ________   ________   _______    ________     
+|\  \|\  \ |\   ___ \ |\   ____\ |\  ___ \  |\   ____\    
+\ \  \\\  \\ \  \_|\ \\ \  \___|_\ \   __/| \ \  \___|    
+ \ \   __  \\ \  \ \\ \\ \_____  \\ \  \_|/__\ \  \       
+  \ \  \ \  \\ \  \_\\ \\|____|\  \\ \  \_|\ \\ \  \____  
+   \ \__\ \__\\ \_______\ ____\_\  \\ \_______\\ \_______\
+    \|__|\|__| \|_______||\_________\\|_______| \|_______|
+                         \|_________|                     
+                                                          
+                                                          
+ls
+	about
+	members
+	links
+	contact us
+	comments
+	tools/(这是目录)
+
+about
+	成立于2024.8.17，专注于CTF，
+
+members
+	详见https://www.hdsec.cn/，记得要有bio、头像、名字、网站
+
+links
+	详见https://www.hdsec.cn/
+
+contact us
+	email:k@hdsec.cn
+	github:https://github.com/Team-intN18-SoybeanSeclab
+	微信公众号:黄豆安全实验室
+	QQ群:1028924504(http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=YJYbW2k-TFlv5VnbCx_pdbnDe2SLwzf2&authKey=oLKp6CLxuB24eEl%2FoAfMD2ZBkbwHwXB75%2BG%2B2itYUeJe4VSmN86SxdySkQjJQOFm&noverify=0&group_code=1028924504)
+
+comments
+	         <script src="https://giscus.app/client.js" data-repo="kn1g78/comment" data-repo-id="R_kgDONwkByQ" data-category="General" data-category-id="DIC_kwDONwkByc4CmZub" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN" crossorigin="anonymous" async>
+            </script>
+
+tools/intranet/intranet.html
+tools/cyberchef/cyberchef.html
+这俩直接跳转
