@@ -12,7 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         mobai: {
-          green: "#17F700",
+          green: "#138352",
         },
       },
       fontFamily: {

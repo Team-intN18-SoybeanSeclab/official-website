@@ -10,7 +10,7 @@ const DesktopLayout = () => {
     <>
       <Crosshair containerRef={containerRef} color="#ffffff" />
       <div className="flex flex-col h-screen w-full">
-        <div className="h-screen w-full flex flex-col pt-24 gap-4 bg-[#138352]">
+        <div className="h-screen w-full flex flex-col pt-24 gap-4 bg-mobai-green">
           <div className="h-full relative">
             <Waves
               lineColor="#fff"
