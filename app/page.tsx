@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <div className="flex flex-row h-screen w-full max-w-7xl mx-auto">
       <Sidebar />
-      <div
-        id="members"
-        className="w-full overflow-y-auto overflow-x-hidden xl:border-r border-mobai-border scrollbar-hide"
-      >
-        <div className="grid grid-cols-2 gap-4 p-4 w-full md:grid-cols-3 lg:grid-cols-4 border-b border-mobai-border xl:grid-cols-5 2xl:grid-cols-6">
+      <div className="w-full overflow-y-auto overflow-x-hidden xl:border-r border-mobai-border scrollbar-hide">
+        <div
+          id="members"
+          className="grid grid-cols-2 gap-4 p-4 w-full md:grid-cols-3 lg:grid-cols-4 border-b border-mobai-border xl:grid-cols-5 2xl:grid-cols-6"
+        >
           {members.map((member) => (
             <MembarBlock
               key={member.name}
