@@ -1,0 +1,18 @@
+{
+  "join": [
+    {
+      "name": "Email",
+      "href": "mailto:k@hdsec.cn",
+      "description": "k@hdsec.cn"
+    },
+    {
+      "name": "QQ",
+      "href": "tencent://message/?uin=2495027200&Site=hdsec&Menu=yes",
+      "description": "2495027200"
+    },
+    {
+      "name": "WeChat",
+      "description": "Attack-Xuan8ai"
+    }
+  ]
+}

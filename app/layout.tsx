@@ -1,32 +1,16 @@
-import { ScreenSizeProvider } from "@/context/ScreenSizeContext";
 import type { Metadata } from "next";
-import { DM_Sans, Oswald } from "next/font/google";
+import { Fjalla_One } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const fjallaOne = Fjalla_One({
+  variable: "--font-fjalla-one",
   subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
-  title: "SoybeanSec - 黄豆安全实验室",
-  description: "黄豆安全实验室",
-  authors: [{ name: "MOBAI", url: "https://github.com/Artist-MOBAI" }],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+  title: "Soybean SEC",
+  description: "Soybean SEC",
 };
 
 export default function RootLayout({
@@ -36,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${oswald.variable} antialiased`}>
-        <ScreenSizeProvider>{children}</ScreenSizeProvider>
-      </body>
+      <body className={`${fjallaOne.variable} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,24 @@
+{
+  "contact": [
+    {
+      "name": "Email",
+      "href": "mailto:k@hdsec.cn",
+      "description": "k@hdsec.cn"
+    },
+    {
+      "name": "Github",
+      "href": "https://github.com/Team-intN18-SoybeanSeclab",
+      "description": "Team::intN18-SoybeanSeclab"
+    },
+    {
+      "name": "QQ Group",
+      "href": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=YJYbW2k-TFlv5VnbCx_pdbnDe2SLwzf2&authKey=oLKp6CLxuB24eEl%2FoAfMD2ZBkbwHwXB75%2BG%2B2itYUeJe4VSmN86SxdySkQjJQOFm&noverify=0&group_code=1028924504",
+      "description": "1028924504"
+    },
+    {
+      "name": "公众号",
+      "href": "https://mp.weixin.qq.com/s/ou5zehArQk4u41F9b9pscw",
+      "description": "黄豆安全实验室"
+    }
+  ]
+}

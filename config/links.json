@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "name": "HDSEC.BLOG",
+      "href": "https://blog.hdsec.cn/",
+      "description": "黄豆安全博客"
+    },
+    {
+      "name": "隼目安全",
+      "href": "https://www.cn-fnst.top/",
+      "description": "隼目安全论坛"
+    },
+    {
+      "name": "阻击者联盟",
+      "href": "https://blog.h-acker.cn/",
+      "description": "阻击者联盟论坛"
+    },
+    {
+      "name": "HK.PE",
+      "href": "https://hk.pe/",
+      "description": "轻量化自助建站系统"
+    },
+    {
+      "name": "兔兔的小窝",
+      "href": "https://www.tutusec.com/",
+      "description": "秃兔安全社区"
+    }
+  ]
+}

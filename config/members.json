@@ -1,0 +1,62 @@
+{
+  "members": [
+    {
+      "image": "/images/knight.jpeg",
+      "name": "黄豆",
+      "description": "吉祥物\nSoybean SEC 创始人",
+      "href": "https://blog.hdsec.cn/"
+    },
+    {
+      "image": "/images/mobai.jpeg",
+      "name": "MOBAI",
+      "description": "Full-stack Dev / Cross-platform Dev / UI&UX Artist",
+      "href": "https://github.com/Artist-MOBAI"
+    },
+    {
+      "image": "/images/ziantt.jpeg",
+      "name": "ZianTT",
+      "description": "CTFer",
+      "href": "https://github.com/ZianTT"
+    },
+    {
+      "image": "/images/hama.png",
+      "name": "蛤蟆",
+      "description": "Web / 社会工程学"
+    },
+    {
+      "image": "/images/ph4nt0m.jpeg",
+      "name": "Ph4nt0m",
+      "description": "CTFer"
+    },
+    {
+      "image": "/images/x8i.jpeg",
+      "name": "轩白",
+      "description": "CTFer"
+    },
+    {
+      "image": "/images/godskull.jpeg",
+      "name": "骷髅",
+      "description": "OSINT / 社会工程学"
+    },
+    {
+      "image": "/images/sh1zuku.webp",
+      "name": "指针",
+      "description": "开发者"
+    },
+    {
+      "image": "/images/zwt8312.jpeg",
+      "name": "初音",
+      "description": "近源渗透"
+    },
+    {
+      "image": "/images/get.jpeg",
+      "name": ".GET",
+      "description": "src挖掘"
+    },
+    {
+      "image": "/images/rainbowCat.jpeg",
+      "name": "虹猫少侠",
+      "description": "代码审计"
+    }
+  ]
+}
