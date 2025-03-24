@@ -1,12 +1,12 @@
-import Sidebar from "@/components/layout/Sidebar";
-import LinkBlock from "@/components/ui/LinkBlock";
-import MembarBlock from "@/components/ui/MembarBlock";
 import ContactBlock from "@/components/ui/ContactBlock";
 import JoinBlock from "@/components/ui/JoinBlock";
-import { members } from "@/config/members.json";
-import { links } from "@/config/links.json";
+import LinkBlock from "@/components/ui/LinkBlock";
+import MembarBlock from "@/components/ui/MembarBlock";
+import Sidebar from "@/components/layout/Sidebar";
 import { contact } from "@/config/contact.json";
 import { join } from "@/config/join.json";
+import { links } from "@/config/links.json";
+import { members } from "@/config/members.json";
 
 export default function Home() {
   return (

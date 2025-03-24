@@ -1,8 +1,8 @@
 import {
-  motion,
   TargetAndTransition,
   Transition,
   VariantLabels,
+  motion,
 } from "framer-motion";
 
 export interface RotatingTextRef {

@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-import { Fjalla_One } from "next/font/google";
 import "./globals.css";
+
+import { Fjalla_One } from "next/font/google";
+import type { Metadata } from "next";
 
 const fjallaOne = Fjalla_One({
   variable: "--font-fjalla-one",
