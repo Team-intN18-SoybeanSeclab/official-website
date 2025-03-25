@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "tailwind-scrollbar-hide";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
@@ -19,13 +20,11 @@
   --ease-mobai-standard: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --mobai-border: #e1fc30;
-    --mobai-yellow: #e1fc30;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --mobai-border: #e1fc30;
+  --mobai-yellow: #e1fc30;
 }
 
 body {

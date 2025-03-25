@@ -3,6 +3,7 @@ import "./globals.css";
 import { Fjalla_One, Oswald } from "next/font/google";
 
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const fjallaOne = Fjalla_One({
   variable: "--font-fjalla-one",
@@ -31,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${fjallaOne.variable} ${defaultFont.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

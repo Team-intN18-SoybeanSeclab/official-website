@@ -1,6 +1,5 @@
 import Brand from "@/components/layout/sidebar/Brand";
-import Github from "@/components/icons/Github";
-import Link from "next/link";
+import Footer from "@/components/layout/sidebar/Footer";
 import Nav from "@/components/layout/sidebar/Nav";
 import React from "react";
 
@@ -18,14 +17,7 @@ const Sidebar = () => {
           <div className="w-1/3 bg-[#3C00FF]" />
         </div>
       </div>
-      <div className="px-4">
-        <Link
-          href="https://github.com/Team-intN18-SoybeanSeclab"
-          target="_blank"
-        >
-          <Github />
-        </Link>
-      </div>
+      <Footer />
     </div>
   );
 };
