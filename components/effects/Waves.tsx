@@ -1,3 +1,5 @@
+"use client";
+
 import { Config, Mouse, Point, WavesProps } from "@/interfaces/waves";
 import React, { useEffect, useRef } from "react";
 
