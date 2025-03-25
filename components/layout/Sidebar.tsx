@@ -11,7 +11,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-2 p-4 pt-8">
+      <div className="flex flex-col gap-2 p-4 py-8">
         <Link
           href="#members"
           className="text-4xl hover:[text-shadow:1px_1px_black] font-medium font-fjalla-one text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
@@ -36,6 +36,13 @@ const Sidebar = () => {
         >
           Join
         </Link>
+      </div>
+      <div className="pb-4">
+        <div className="flex h-[1px] w-full">
+          <div className="w-1/3 bg-[#D90000]" />
+          <div className="w-1/3 bg-[#15DD4B]" />
+          <div className="w-1/3 bg-[#3C00FF]" />
+        </div>
       </div>
     </div>
   );
