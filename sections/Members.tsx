@@ -5,7 +5,7 @@ const Members = () => {
   return (
     <div
       id="members"
-      className="grid grid-cols-2 gap-4 p-4 w-full md:grid-cols-3 lg:grid-cols-4 border-b border-mobai-border xl:grid-cols-5 2xl:grid-cols-6"
+      className="border-mobai-border grid w-full grid-cols-2 gap-4 border-b p-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
     >
       {members.map((member) => (
         <MembarBlock

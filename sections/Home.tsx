@@ -6,12 +6,12 @@ const HomeSection = () => {
   return (
     <div
       id="home"
-      className="flex flex-col min-h-[500px] h-[50vh] sm:h-[60vh] lg:h-[90vh] border-b border-mobai-border lg:overflow-hidden"
+      className="border-mobai-border flex h-[50vh] min-h-[500px] flex-col border-b sm:h-[60vh] lg:h-[90vh] lg:overflow-hidden"
     >
       <div className="relative h-full">
-        <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
+        <div className="absolute top-0 right-0 left-0 z-10 flex h-full flex-col">
           <div className="flex flex-col gap-4">
-            <div className="px-4 pt-4 sm:pt-3 md:pt-2 lg:pt-0 transition-all duration-500 ease-mobai-bounce">
+            <div className="ease-mobai-bounce px-4 pt-4 transition-all duration-500 sm:pt-3 md:pt-2 lg:pt-0">
               <TextPressure
                 text="SoybeanSec"
                 flex={true}
@@ -25,13 +25,13 @@ const HomeSection = () => {
                 minFontSize={36}
               />
             </div>
-            <div className="border-mobai-border border-y w-full px-4">
-              <p className="text-6xl sm:text-7xl md:text-8xl transition-all duration-500 ease-mobai-bounce lg:text-9xl whitespace-pre-wrap font-medium md:font-normal lg:font-light text-foreground bg-mobai-yellow hover:bg-transparent w-fit px-2 hover:px-0">
+            <div className="border-mobai-border w-full border-y px-4">
+              <p className="ease-mobai-bounce text-foreground bg-mobai-yellow w-fit px-2 text-6xl font-medium whitespace-pre-wrap transition-all duration-500 hover:bg-transparent hover:px-0 sm:text-7xl md:text-8xl md:font-normal lg:text-9xl lg:font-light">
                 {`黄豆安全\n实验室`}
               </p>
             </div>
           </div>
-          <div className="px-4 border-t mt-auto sm:border-b sm:mt-4 border-mobai-border lg:mt-0 flex md:justify-end transition-all duration-500 ease-mobai-bounce lg:-rotate-12 origin-bottom-right">
+          <div className="border-mobai-border ease-mobai-bounce mt-auto flex origin-bottom-right border-t px-4 transition-all duration-500 sm:mt-4 sm:border-b md:justify-end lg:mt-0 lg:-rotate-12">
             <RotatingText
               texts={[
                 "Web",

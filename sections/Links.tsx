@@ -5,7 +5,7 @@ const Links = () => {
   return (
     <div
       id="links"
-      className="grid grid-cols-1 gap-4 p-4 w-full md:grid-cols-2 lg:grid-cols-3 border-mobai-border xl:grid-cols-4 border-b"
+      className="border-mobai-border grid w-full grid-cols-1 gap-4 border-b p-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
       {links.map((link) => (
         <LinkBlock

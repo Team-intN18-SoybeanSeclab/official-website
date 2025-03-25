@@ -9,7 +9,7 @@ const lerp = (a: number, b: number, n: number): number => (1 - n) * a + n * b;
 
 const getMousePos = (
   e: Event,
-  container?: HTMLElement | null
+  container?: HTMLElement | null,
 ): MousePosition => {
   const mouseEvent = e as MouseEvent;
   if (container) {
@@ -47,16 +47,16 @@ const Crosshair: React.FC<CrosshairProps> = ({
         ) {
           gsap.to(
             [lineHorizontalRef.current, lineVerticalRef.current].filter(
-              Boolean
+              Boolean,
             ),
-            { opacity: 0 }
+            { opacity: 0 },
           );
         } else {
           gsap.to(
             [lineHorizontalRef.current, lineVerticalRef.current].filter(
-              Boolean
+              Boolean,
             ),
-            { opacity: 1 }
+            { opacity: 1 },
           );
         }
       }
@@ -74,7 +74,7 @@ const Crosshair: React.FC<CrosshairProps> = ({
 
     gsap.set(
       [lineHorizontalRef.current, lineVerticalRef.current].filter(Boolean),
-      { opacity: 0 }
+      { opacity: 0 },
     );
 
     const onMouseMove = () => {
@@ -89,7 +89,7 @@ const Crosshair: React.FC<CrosshairProps> = ({
           duration: 0.9,
           ease: "Power3.easeOut",
           opacity: 1,
-        }
+        },
       );
 
       requestAnimationFrame(render);
@@ -116,11 +116,11 @@ const Crosshair: React.FC<CrosshairProps> = ({
           if (filterXRef.current && filterYRef.current) {
             filterXRef.current.setAttribute(
               "baseFrequency",
-              primitiveValues.turbulence.toString()
+              primitiveValues.turbulence.toString(),
             );
             filterYRef.current.setAttribute(
               "baseFrequency",
-              primitiveValues.turbulence.toString()
+              primitiveValues.turbulence.toString(),
             );
           }
         },
@@ -182,9 +182,9 @@ const Crosshair: React.FC<CrosshairProps> = ({
       ref={cursorRef}
       className={`${
         containerRef ? "absolute" : "fixed"
-      } top-0 left-0 w-full h-full pointer-events-none z-[10000]`}
+      } pointer-events-none top-0 left-0 z-[10000] h-full w-full`}
     >
-      <svg className="absolute top-0 left-0 w-full h-full">
+      <svg className="absolute top-0 left-0 h-full w-full">
         <defs>
           <filter id="filter-noise-x">
             <feTurbulence
@@ -208,12 +208,12 @@ const Crosshair: React.FC<CrosshairProps> = ({
       </svg>
       <div
         ref={lineHorizontalRef}
-        className={`absolute w-full h-px pointer-events-none opacity-0 transform translate-y-1/2`}
+        className={`pointer-events-none absolute h-px w-full translate-y-1/2 transform opacity-0`}
         style={{ background: color }}
       ></div>
       <div
         ref={lineVerticalRef}
-        className={`absolute h-full w-px pointer-events-none opacity-0 transform translate-x-1/2`}
+        className={`pointer-events-none absolute h-full w-px translate-x-1/2 transform opacity-0`}
         style={{ background: color }}
       ></div>
     </div>
@@ -225,7 +225,7 @@ const CrosshairContainer = () => {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-full fixed top-0 left-0 z-20 pointer-events-none hidden sm:block"
+      className="pointer-events-none fixed top-0 left-0 z-20 hidden h-screen w-full sm:block"
     >
       <Crosshair
         containerRef={containerRef as React.RefObject<HTMLElement>}

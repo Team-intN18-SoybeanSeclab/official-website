@@ -123,7 +123,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
           const getAttr = (
             distance: number,
             minVal: number,
-            maxVal: number
+            maxVal: number,
           ) => {
             const val = maxVal - Math.abs((maxVal * distance) / maxDist);
             return Math.max(minVal, val + minVal);
@@ -149,7 +149,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full overflow-hidden bg-transparent"
+      className="relative h-full w-full overflow-hidden bg-transparent"
     >
       <style>{`
         .stroke span {
@@ -172,7 +172,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
         ref={titleRef}
         className={`text-pressure-title ${className} ${
           flex ? "flex justify-between" : ""
-        } ${stroke ? "stroke" : ""} uppercase text-center`}
+        } ${stroke ? "stroke" : ""} text-center uppercase`}
         style={{
           fontFamily,
           fontSize: fontSize,

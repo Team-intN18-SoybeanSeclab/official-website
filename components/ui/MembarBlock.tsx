@@ -19,20 +19,20 @@ const MembarBlock = ({
   return (
     <Link
       href={href ?? ""}
-      className="bg-mobai-yellow py-8 w-full min-h-72 flex flex-col gap-4 hover:bg-transparent transition-all duration-500 ease-mobai-bounce"
+      className="bg-mobai-yellow ease-mobai-bounce flex min-h-72 w-full flex-col gap-4 py-8 transition-all duration-500 hover:bg-transparent"
     >
-      <div className="border-y border-background border-x-8 border-r-2">
-        <div className="relative w-20 h-20 border-r border-background">
+      <div className="border-background border-x-8 border-y border-r-2">
+        <div className="border-background relative h-20 w-20 border-r">
           <Image src={image} alt="avatar" fill className="object-cover" />
         </div>
       </div>
-      <div className="px-2 flex flex-col gap-1">
+      <div className="flex flex-col gap-1 px-2">
         <p
           className={`text-2xl ${fontClass} text-foreground dark:text-background`}
         >
           {name}
         </p>
-        <p className="text-foreground dark:text-background font-medium font-fjalla-one whitespace-pre-wrap">
+        <p className="text-foreground dark:text-background font-fjalla-one font-medium whitespace-pre-wrap">
           {description}
         </p>
       </div>

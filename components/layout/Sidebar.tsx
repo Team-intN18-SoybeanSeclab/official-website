@@ -6,7 +6,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="hidden sm:flex flex-col h-full border-r border-mobai-border xl:border-l">
+    <div className="border-mobai-border hidden h-full flex-col border-r sm:flex xl:border-l">
       <div className="pt-4">
         <Brand />
       </div>

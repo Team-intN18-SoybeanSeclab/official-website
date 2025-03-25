@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <Crosshair />
-      <div className="flex flex-row h-screen w-full max-w-7xl mx-auto">
+      <div className="mx-auto flex h-screen w-full max-w-7xl flex-row">
         <Sidebar />
-        <div className="w-full overflow-y-auto overflow-x-hidden xl:border-r border-mobai-border scrollbar-hide">
+        <div className="border-mobai-border scrollbar-hide w-full overflow-x-hidden overflow-y-auto xl:border-r">
           <HomeSection />
           <Members />
           <Links />

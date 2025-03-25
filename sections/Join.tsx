@@ -9,7 +9,7 @@ const Join = () => {
           如果您想加入本团队，可通过以下方式投递您的简历
         </p>
       </div>
-      <div className="grid p-4 grid-cols-1 gap-4 w-full md:grid-cols-2 lg:grid-cols-3 border-mobai-border xl:grid-cols-4">
+      <div className="border-mobai-border grid w-full grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {join.map((join) => (
           <JoinBlock
             key={join.name}

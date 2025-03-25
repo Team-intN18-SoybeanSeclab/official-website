@@ -3,12 +3,12 @@ import React from "react";
 
 const Brand = () => {
   return (
-    <div className="px-4 border-y border-mobai-border">
+    <div className="border-mobai-border border-y px-4">
       <Link
         href="#home"
-        className="bg-mobai-yellow w-fit px-2 flex flex-col justify-center items-center"
+        className="bg-mobai-yellow flex w-fit flex-col items-center justify-center px-2"
       >
-        <p className="whitespace-nowrap text-black font-fjalla-one text-5xl">{`Soybean SEC`}</p>
+        <p className="font-fjalla-one text-5xl whitespace-nowrap text-black">{`Soybean SEC`}</p>
       </Link>
     </div>
   );
