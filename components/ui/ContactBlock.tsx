@@ -18,7 +18,7 @@ const ContactBlock = ({
       href={href ?? ""}
       className="flex flex-col gap-4 bg-mobai-yellow py-8"
     >
-      <div className="border-l-8 border-y border-r-4 border-background px-1">
+      <div className="border-l-8 border-y hover:border-y-2 border-r-4 border-background px-1">
         <p
           className={`text-foreground dark:text-background ${fontClass} text-2xl`}
         >
