@@ -20,12 +20,12 @@ const JoinBlock = ({
     >
       <div className="border-background ease-mobai-bounce border-y border-r-4 border-l-8 px-1 transition-all duration-300 group-hover:px-0">
         <p
-          className={`text-foreground dark:text-background ${fontClass} text-2xl`}
+          className={`text-foreground dark:text-background ${fontClass} dark:group-hover:text-mobai-yellow text-2xl transition-all duration-300 hover:bg-transparent`}
         >
           {name}
         </p>
       </div>
-      <p className="text-foreground dark:text-background font-fjalla-one px-2 font-medium">
+      <p className="text-foreground dark:text-background font-fjalla-one dark:group-hover:text-mobai-yellow px-2 font-medium transition-all duration-300 hover:bg-transparent">
         {description}
       </p>
     </Link>

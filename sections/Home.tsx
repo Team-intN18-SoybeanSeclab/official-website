@@ -26,7 +26,7 @@ const HomeSection = () => {
               />
             </div>
             <div className="border-mobai-border w-full border-y px-4">
-              <p className="ease-mobai-bounce text-foreground bg-mobai-yellow w-fit px-2 text-6xl font-medium whitespace-pre-wrap transition-all duration-500 hover:bg-transparent hover:px-0 sm:text-7xl md:text-8xl md:font-normal lg:text-9xl lg:font-light">
+              <p className="ease-mobai-bounce text-foreground dark:text-background hover:text-mobai-yellow bg-mobai-yellow w-fit px-2 text-6xl font-medium whitespace-pre-wrap transition-all duration-500 hover:bg-transparent hover:px-0 hover:py-4 sm:text-7xl md:text-8xl md:font-normal lg:text-9xl lg:font-light">
                 {`黄豆安全\n实验室`}
               </p>
             </div>
@@ -45,7 +45,7 @@ const HomeSection = () => {
                 "Blockchain",
                 "AI",
               ]}
-              mainClassName="px-2 bg-[#e1fc30] lg:bg-transparent text-foreground w-fit font-fjalla-one text-3xl lg:text-9xl px-4 overflow-hidden py-2 justify-center transition-all duration-500 ease-mobai-bounce"
+              mainClassName="px-2 bg-mobai-yellow lg:bg-transparent text-foreground dark:text-background dark:lg:text-mobai-yellow w-fit font-fjalla-one text-3xl lg:text-9xl px-4 overflow-hidden py-2 justify-center transition-all duration-500 ease-mobai-bounce"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
