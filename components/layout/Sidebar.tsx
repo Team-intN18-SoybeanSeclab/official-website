@@ -14,25 +14,25 @@ const Sidebar = () => {
       <div className="flex flex-col gap-2 p-4 py-8">
         <Link
           href="#members"
-          className="text-4xl hover:[text-shadow:1px_1px_black] font-medium font-fjalla-one text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
+          className="text-4xl hover:[text-shadow:1px_1px_#D90000] hover:text-background font-medium font-fjalla-one text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
         >
           Members
         </Link>
         <Link
           href="#links"
-          className="text-2xl hover:[text-shadow:1px_1px_black] hover:text-4xl font-medium font-fjalla-one hover:text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
+          className="text-2xl hover:[text-shadow:1px_1px_#15DD4B] hover:text-4xl font-medium font-fjalla-one hover:text-background transition-all duration-300 ease-mobai-bounce"
         >
           Links
         </Link>
         <Link
           href="#contact"
-          className="text-2xl hover:[text-shadow:1px_1px_black] hover:text-4xl font-medium font-fjalla-one hover:text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
+          className="text-2xl hover:[text-shadow:1px_1px_#3C00FF] hover:text-4xl font-medium font-fjalla-one hover:text-background transition-all duration-300 ease-mobai-bounce"
         >
           Contact
         </Link>
         <Link
           href="#join"
-          className="text-2xl hover:[text-shadow:1px_1px_black] hover:text-4xl font-medium font-fjalla-one hover:text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
+          className="text-2xl hover:[text-shadow:1px_1px_#15DD4B] hover:text-4xl font-medium font-fjalla-one hover:text-background transition-all duration-300 ease-mobai-bounce"
         >
           Join
         </Link>
