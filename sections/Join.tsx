@@ -4,7 +4,7 @@ import { join } from "@/config/join.json";
 const Join = () => {
   return (
     <div id="join">
-      <div className="border-b border-mobai-border px-4">
+      <div className="px-4">
         <p className="bg-mobai-yellow text-foreground dark:text-background w-fit px-2 font-medium">
           如果您想加入本团队，可通过以下方式投递您的简历
         </p>

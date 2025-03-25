@@ -4,7 +4,7 @@ import { contact } from "@/config/contact.json";
 const Contact = () => {
   return (
     <div id="contact" className="border-b border-mobai-border">
-      <div className="border-b border-mobai-border px-4">
+      <div className="px-4">
         <p className="bg-mobai-border text-foreground dark:text-background w-fit px-2 font-medium">
           如果您有任何问题或合作意向，欢迎通过以下方式联系我们
         </p>
