@@ -14,7 +14,7 @@ const Sidebar = () => {
       <div className="flex flex-col gap-2 p-4 py-8">
         <Link
           href="#members"
-          className="text-4xl hover:[text-shadow:1px_1px_#D90000] hover:text-background font-medium font-fjalla-one text-mobai-yellow transition-all duration-300 ease-mobai-bounce"
+          className="text-4xl [text-shadow:1px_1px_#D90000] hover:text-background font-medium font-fjalla-one text-background transition-all duration-300 ease-mobai-bounce"
         >
           Members
         </Link>

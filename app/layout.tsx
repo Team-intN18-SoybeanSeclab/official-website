@@ -1,12 +1,19 @@
 import "./globals.css";
 
-import { Fjalla_One } from "next/font/google";
+import { Fjalla_One, Oswald } from "next/font/google";
+
 import type { Metadata } from "next";
 
 const fjallaOne = Fjalla_One({
   variable: "--font-fjalla-one",
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fjallaOne.variable} antialiased`}>{children}</body>
+      <body className={`${fjallaOne.variable} ${oswald.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

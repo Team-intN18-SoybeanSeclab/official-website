@@ -7,24 +7,26 @@ const HomeSection = () => {
     <div className="flex flex-col h-[50vh] sm:h-[90vh] border-b border-mobai-border">
       <div className="relative h-full">
         <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
-          <div className="px-4">
-            <TextPressure
-              text="SoybeanSec"
-              flex={true}
-              alpha={false}
-              stroke={false}
-              width={true}
-              weight={true}
-              italic={true}
-              textColor="#e1fc30"
-              strokeColor="#ff0000"
-              minFontSize={36}
-            />
-          </div>
-          <div className="border-mobai-border border-y w-full px-4">
-            <p className="text-6xl sm:text-7xl md:text-8xl transition-all duration-500 ease-mobai-bounce lg:text-9xl whitespace-pre-wrap font-medium md:font-normal lg:font-light text-foreground bg-mobai-yellow w-fit px-2">
-              {`黄豆安全\n实验室`}
-            </p>
+          <div className="flex flex-col gap-4">
+            <div className="px-4 pt-4 sm:pt-3 md:pt-2 lg:pt-0 font-oswald transition-all duration-500 ease-mobai-bounce">
+              <TextPressure
+                text="SoybeanSec"
+                flex={true}
+                alpha={false}
+                stroke={false}
+                width={true}
+                weight={true}
+                italic={true}
+                textColor="#e1fc30"
+                strokeColor="#ff0000"
+                minFontSize={36}
+              />
+            </div>
+            <div className="border-mobai-border border-y w-full px-4">
+              <p className="text-6xl sm:text-7xl md:text-8xl transition-all duration-500 ease-mobai-bounce lg:text-9xl whitespace-pre-wrap font-medium md:font-normal lg:font-light text-foreground bg-mobai-yellow w-fit px-2">
+                {`黄豆安全\n实验室`}
+              </p>
+            </div>
           </div>
           <div className="px-4 border-t mt-auto sm:border-b sm:mt-4 border-mobai-border lg:border-t-0 lg:mt-0 flex md:justify-end transition-all duration-500 ease-mobai-bounce">
             <RotatingText
