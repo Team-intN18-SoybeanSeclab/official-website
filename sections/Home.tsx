@@ -4,7 +4,7 @@ import Waves from "@/components/effects/Waves";
 
 const HomeSection = () => {
   return (
-    <div className="flex flex-col h-[50vh] sm:h-[90vh] border-b border-mobai-border lg:overflow-hidden">
+    <div className="flex flex-col min-h-[500px] h-[50vh] sm:h-[60vh] lg:h-[90vh] border-b border-mobai-border lg:overflow-hidden">
       <div className="relative h-full">
         <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
           <div className="flex flex-col gap-4">
