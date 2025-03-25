@@ -1,3 +1,5 @@
+"use client";
+
 import React, { RefObject, useEffect, useRef } from "react";
 
 import { gsap } from "gsap";
@@ -222,4 +224,19 @@ const Crosshair: React.FC<CrosshairProps> = ({
   );
 };
 
-export default Crosshair;
+const CrosshairContainer = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  return (
+    <div
+      ref={containerRef}
+      className="h-screen w-full fixed top-0 left-0 z-20 pointer-events-none hidden sm:block"
+    >
+      <Crosshair
+        containerRef={containerRef as React.RefObject<HTMLElement>}
+        color="#e1fc30"
+      />
+    </div>
+  );
+};
+
+export default CrosshairContainer;
