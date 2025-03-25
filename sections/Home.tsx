@@ -4,7 +4,10 @@ import Waves from "@/components/effects/Waves";
 
 const HomeSection = () => {
   return (
-    <div className="flex flex-col min-h-[500px] h-[50vh] sm:h-[60vh] lg:h-[90vh] border-b border-mobai-border lg:overflow-hidden">
+    <div
+      id="home"
+      className="flex flex-col min-h-[500px] h-[50vh] sm:h-[60vh] lg:h-[90vh] border-b border-mobai-border lg:overflow-hidden"
+    >
       <div className="relative h-full">
         <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
           <div className="flex flex-col gap-4">
@@ -23,7 +26,7 @@ const HomeSection = () => {
               />
             </div>
             <div className="border-mobai-border border-y w-full px-4">
-              <p className="text-6xl sm:text-7xl md:text-8xl transition-all duration-500 ease-mobai-bounce lg:text-9xl whitespace-pre-wrap font-medium md:font-normal lg:font-light text-foreground bg-mobai-yellow w-fit px-2">
+              <p className="text-6xl sm:text-7xl md:text-8xl transition-all duration-500 ease-mobai-bounce lg:text-9xl whitespace-pre-wrap font-medium md:font-normal lg:font-light text-foreground bg-mobai-yellow hover:bg-transparent w-fit px-2 hover:px-0">
                 {`黄豆安全\n实验室`}
               </p>
             </div>
