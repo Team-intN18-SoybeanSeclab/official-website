@@ -4,7 +4,7 @@ import Waves from "@/components/effects/Waves";
 
 const HomeSection = () => {
   return (
-    <div className="flex flex-col h-[50vh] sm:h-[90vh] border-b border-mobai-border">
+    <div className="flex flex-col h-[50vh] sm:h-[90vh] border-b border-mobai-border lg:overflow-hidden">
       <div className="relative h-full">
         <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
           <div className="flex flex-col gap-4">
@@ -28,7 +28,7 @@ const HomeSection = () => {
               </p>
             </div>
           </div>
-          <div className="px-4 border-t mt-auto sm:border-b sm:mt-4 border-mobai-border lg:border-t-0 lg:mt-0 flex md:justify-end transition-all duration-500 ease-mobai-bounce">
+          <div className="px-4 border-t mt-auto sm:border-b sm:mt-4 border-mobai-border lg:mt-0 flex md:justify-end transition-all duration-500 ease-mobai-bounce lg:-rotate-12 origin-bottom-right">
             <RotatingText
               texts={[
                 "Web",
@@ -42,13 +42,13 @@ const HomeSection = () => {
                 "Blockchain",
                 "AI",
               ]}
-              mainClassName="px-2 bg-[#e1fc30] text-foreground w-fit font-fjalla-one text-3xl px-4 overflow-hidden py-2 justify-center"
+              mainClassName="px-2 bg-[#e1fc30] lg:bg-transparent text-foreground w-fit font-fjalla-one text-3xl lg:text-9xl px-4 overflow-hidden py-2 justify-center transition-all duration-500 ease-mobai-bounce"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-120%" }}
               staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              splitLevelClassName="pb-0.5 lg:pt-2"
               transition={{ type: "spring", damping: 30, stiffness: 400 }}
               rotationInterval={2000}
             />
