@@ -15,7 +15,6 @@
   --color-mobai-yellow: var(--mobai-yellow);
   --font-fjalla-one: var(--font-fjalla-one);
   --font-oswald: var(--font-oswald);
-
   --ease-mobai-bounce: cubic-bezier(0.84, 0, 0.165, 1);
   --ease-mobai-standard: cubic-bezier(0.4, 0, 0.2, 1);
 }

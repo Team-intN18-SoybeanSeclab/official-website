@@ -1,9 +1,12 @@
 import {
-  TargetAndTransition,
-  Transition,
-  VariantLabels,
   motion,
+  Transition,
+  type VariantLabels,
+  type Target,
+  type AnimationControls,
+  type TargetAndTransition,
 } from "framer-motion";
+import React from "react";
 
 export interface RotatingTextRef {
   next: () => void;
@@ -19,9 +22,9 @@ export interface RotatingTextProps
   > {
   texts: string[];
   transition?: Transition;
-  initial?: TargetAndTransition | VariantLabels;
-  animate?: TargetAndTransition | VariantLabels;
-  exit?: TargetAndTransition | VariantLabels;
+  initial?: boolean | Target | VariantLabels;
+  animate?: boolean | VariantLabels | AnimationControls | TargetAndTransition;
+  exit?: Target | VariantLabels;
   animatePresenceMode?: "sync" | "wait";
   animatePresenceInitial?: boolean;
   rotationInterval?: number;

@@ -10,9 +10,9 @@ const fjallaOne = Fjalla_One({
   weight: ["400"],
 });
 
-const oswald = Oswald({
-  variable: "--font-oswald",
+const defaultFont = Oswald({
   subsets: ["latin"],
+  variable: "--font-oswald",
   weight: ["200", "300", "400", "500", "600", "700"],
 });
 
@@ -28,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fjallaOne.variable} ${oswald.variable} antialiased`}>
+      <body
+        className={`${fjallaOne.variable} ${defaultFont.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

@@ -2,25 +2,22 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const TextPressure = ({
-  text = "Compressa",
-  fontFamily = "var(--font-oswald)",
-  fontUrl = "https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2",
+import { TextPressureProps } from "@/interfaces/textPressure";
 
+const TextPressure: React.FC<TextPressureProps> = ({
+  text = "Compressa",
+  fontFamily = "oswald",
   width = true,
   weight = true,
   italic = true,
   alpha = false,
-
   flex = true,
   stroke = false,
   scale = false,
-
   textColor = "#FFFFFF",
   strokeColor = "#FF0000",
   strokeWidth = 2,
   className = "",
-
   minFontSize = 24,
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -94,13 +91,13 @@ const TextPressure = ({
         setLineHeight(yRatio);
       }
     });
-  }, [minFontSize, scale, chars.length]);
+  }, [chars.length, minFontSize, scale]);
 
   useEffect(() => {
     setSize();
     window.addEventListener("resize", setSize);
     return () => window.removeEventListener("resize", setSize);
-  }, [setSize, scale, text]);
+  }, [scale, text, setSize]);
 
   useEffect(() => {
     let rafId: number;
@@ -134,7 +131,7 @@ const TextPressure = ({
 
           const wdth = width ? Math.floor(getAttr(d, 5, 200)) : 100;
           const wght = weight ? Math.floor(getAttr(d, 100, 900)) : 400;
-          const italVal = italic ? getAttr(d, 0, 1).toFixed(2) : 0;
+          const italVal = italic ? getAttr(d, 0, 1).toFixed(2) : "0";
           const alphaVal = alpha ? getAttr(d, 0, 1).toFixed(2) : "1";
 
           span.style.opacity = alphaVal;
@@ -155,11 +152,6 @@ const TextPressure = ({
       className="relative w-full h-full overflow-hidden bg-transparent"
     >
       <style>{`
-        @font-face {
-          font-family: '${fontFamily}';
-          src: url('${fontUrl}');
-          font-style: normal;
-        }
         .stroke span {
           position: relative;
           color: ${textColor};

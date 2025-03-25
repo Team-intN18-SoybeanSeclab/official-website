@@ -8,7 +8,7 @@ const HomeSection = () => {
       <div className="relative h-full">
         <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
           <div className="flex flex-col gap-4">
-            <div className="px-4 pt-4 sm:pt-3 md:pt-2 lg:pt-0 font-oswald transition-all duration-500 ease-mobai-bounce">
+            <div className="px-4 pt-4 sm:pt-3 md:pt-2 lg:pt-0 transition-all duration-500 ease-mobai-bounce">
               <TextPressure
                 text="SoybeanSec"
                 flex={true}

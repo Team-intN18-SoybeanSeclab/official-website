@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import React, {
   forwardRef,
   useCallback,
@@ -8,49 +9,10 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import {
-  motion,
-  AnimatePresence,
-  Transition,
-  type VariantLabels,
-  type Target,
-  type AnimationControls,
-  type TargetAndTransition,
-} from "framer-motion";
+import { RotatingTextProps, RotatingTextRef } from "@/interfaces/rotatingText";
 
 function cn(...classes: (string | undefined | null | boolean)[]): string {
   return classes.filter(Boolean).join(" ");
-}
-
-export interface RotatingTextRef {
-  next: () => void;
-  previous: () => void;
-  jumpTo: (index: number) => void;
-  reset: () => void;
-}
-
-export interface RotatingTextProps
-  extends Omit<
-    React.ComponentPropsWithoutRef<typeof motion.span>,
-    "children" | "transition" | "initial" | "animate" | "exit"
-  > {
-  texts: string[];
-  transition?: Transition;
-  initial?: boolean | Target | VariantLabels;
-  animate?: boolean | VariantLabels | AnimationControls | TargetAndTransition;
-  exit?: Target | VariantLabels;
-  animatePresenceMode?: "sync" | "wait";
-  animatePresenceInitial?: boolean;
-  rotationInterval?: number;
-  staggerDuration?: number;
-  staggerFrom?: "first" | "last" | "center" | "random" | number;
-  loop?: boolean;
-  auto?: boolean;
-  splitBy?: string;
-  onNext?: (index: number) => void;
-  mainClassName?: string;
-  splitLevelClassName?: string;
-  elementLevelClassName?: string;
 }
 
 const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(

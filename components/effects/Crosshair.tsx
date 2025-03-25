@@ -1,6 +1,7 @@
 "use client";
 
-import React, { RefObject, useEffect, useRef } from "react";
+import { CrosshairProps, MousePosition } from "@/interfaces/crosshair";
+import React, { useEffect, useRef } from "react";
 
 import { gsap } from "gsap";
 
@@ -9,7 +10,7 @@ const lerp = (a: number, b: number, n: number): number => (1 - n) * a + n * b;
 const getMousePos = (
   e: Event,
   container?: HTMLElement | null
-): { x: number; y: number } => {
+): MousePosition => {
   const mouseEvent = e as MouseEvent;
   if (container) {
     const bounds = container.getBoundingClientRect();
@@ -20,11 +21,6 @@ const getMousePos = (
   }
   return { x: mouseEvent.clientX, y: mouseEvent.clientY };
 };
-
-interface CrosshairProps {
-  color?: string;
-  containerRef?: RefObject<HTMLElement>;
-}
 
 const Crosshair: React.FC<CrosshairProps> = ({
   color = "white",
