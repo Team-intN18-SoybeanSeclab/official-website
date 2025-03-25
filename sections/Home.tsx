@@ -4,9 +4,9 @@ import Waves from "@/components/effects/Waves";
 
 const HomeSection = () => {
   return (
-    <div className="flex flex-col h-[90vh] border-b border-mobai-border">
+    <div className="flex flex-col h-[50vh] sm:h-[90vh] border-b border-mobai-border">
       <div className="relative h-full">
-        <div className="absolute top-0 left-0 z-10 right-0 mt-4">
+        <div className="absolute top-0 left-0 z-10 right-0 h-full flex flex-col">
           <div className="px-4">
             <TextPressure
               text="SoybeanSec"
@@ -26,7 +26,7 @@ const HomeSection = () => {
               {`黄豆安全\n实验室`}
             </p>
           </div>
-          <div className="px-4 border-y mt-4 border-mobai-border lg:border-t-0 lg:mt-0 flex justify-end transition-all duration-500 ease-mobai-bounce">
+          <div className="px-4 border-t mt-auto sm:border-b sm:mt-4 border-mobai-border lg:border-t-0 lg:mt-0 flex md:justify-end transition-all duration-500 ease-mobai-bounce">
             <RotatingText
               texts={[
                 "Web",
